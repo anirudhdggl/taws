@@ -30,9 +30,8 @@ But in my case I needed to set the header irrespective of the mode of download.
 ### How does the script work
 
 **Variables Used**
-<p>&nbsp;</p>
 |variable name           | Use |
-|:----------------------:|:----                                                                                                                                                            |
+|:----------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | bucket                 | It used to store the bucket name that triggered the function                                                                                                    |
 | key                    | It stores the name of the object that was uploaded                                                                                                              |
 | objectUploadedInFolder | This tells the script whether the object is stored in a folder within the bucket or uploaded simply to the bucket. [see here](#improvements-forceD)             |
@@ -41,7 +40,6 @@ But in my case I needed to set the header irrespective of the mode of download.
 | path                   | Use this variable as destination if you do not want your new file name to have a plus sign instead of spaces,e.g., "hello there.txt" instead of hello+there.txt |
 
 **Methodology**
-<p>&nbsp;</p>
 Whenever any file is uploaded to any folder in the bucket, the lambda function is triggered. This function will then copy the object uploaded, the object that triggered it, and while copying will set it's content-disposition value to attachment.
 
 <a name='improvements-forceD'/>
