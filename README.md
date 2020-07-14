@@ -43,8 +43,11 @@ But in my case I needed to set the header irrespective of the mode of download.
 Whenever any file is uploaded to any folder in the bucket, the lambda function is triggered. This function will then copy the object uploaded, the object that triggered it, and while copying will set it's content-disposition value to attachment.
 
 #### Improvements to be made
-[ ] The script is unable to do the copy task for files that are not uploaded to any folder and rather directly to s3 base directory.
+- [ ] The script is unable to do the copy task for files that are not uploaded to any folder and rather directly to s3 base directory.
 
 <p>&nbsp;</p>
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
+
+<p>&nbsp;</p>
+Made with :heart: by [@anirudhdggl](https://github.com/anirudhdggl)
