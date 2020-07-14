@@ -48,6 +48,3 @@ Whenever any file is uploaded to any folder in the bucket, the lambda function i
 <p>&nbsp;</p>
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
-
-<p>&nbsp;</p>
-Made with :heart: by [@anirudhdggl](https://github.com/anirudhdggl)
