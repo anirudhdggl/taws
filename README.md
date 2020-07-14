@@ -4,7 +4,7 @@ TAWS or **T**ools for **AWS** is a collection of various codes and tools, that I
 
 ## Tools and codes we have
 
-- [Force download files from s3 bucket using lambda function] (#forceD)
+- [Force download files from s3 bucket using lambda function] (#https://github.com/anirudhdggl/taws/#forceD)
 
 ## forceD
 
@@ -42,8 +42,9 @@ But in my case I needed to set the header irrespective of the mode of download.
 **Methodology**
 Whenever any file is uploaded to any folder in the bucket, the lambda function is triggered. This function will then copy the object uploaded, the object that triggered it, and while copying will set it's content-disposition value to attachment.
 
-<a name='improvements-forceD'/>
 **Improvements to be made**
 [] The script is unable to do the copy task for files that are not uploaded to any folder and rather directly to s3 base directory.
+
+<p>&nbsp;</p>
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
