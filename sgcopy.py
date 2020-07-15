@@ -1,8 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import boto3
 import argparse
 import textwrap
+import pyfiglet
+
+banner = pyfiglet.figlet_format("SGCopy")
+
+print(banner)
 
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
   description=textwrap.dedent('''\
