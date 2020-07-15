@@ -43,13 +43,50 @@ But in my case I needed to set the header irrespective of the mode of download.
 #### Methodology
 Whenever any file is uploaded to any folder in the bucket, the lambda function is triggered. This function will then copy the object uploaded, the object that triggered it, and while copying will set it's content-disposition value to attachment.
 
-#### Improvements to be made
+### Improvements to be made
 - [ ] The script is unable to do the copy task for files that are not uploaded to any folder and rather directly to s3 base directory.
 
 <p>&nbsp;</p>
 
 ## sgcopy
 
-AWS provides users with customizable firewalls for instances. These firewalls are called SG or security groups. Although you can attach many SG to an instance, but doing so makes your 
+AWS provides users with customizable firewalls for instances. These firewalls are called SG or security groups. Although you can attach many SG to an instance, but doing so makes your configurations very cumbersome and confusing.
+
+So I personally prefer keeping **one** security group for all the instances, most of the time.
+
+But what if the rules that you want in your SG is a sum of two other SG's rules? Or what if you want to add rules to your SG that are already present in some other SG?
+
+Well for such cases, to make sure that we do not go through a lot of manual process, we use *sgcopy*.
+
+### How to use
+
+To run the script you need to have aws-cli configured.
+
+Install the aws-cli and then run:
+
+```aws configure```
+
+The script uses AWS SDK for python. So you must have it with you.
+
+```pip3 install boto3```
+
+After that, run
+
+``` path/to/your/script/sgcopy.py arguments ```
+
+#### Argument List
+
+| Argument    | Mandatory | Description                                                                                                                                |
+|:-----------:|:---------:|:-------------------------------------------------------------------------------------------------------------------------------------------|
+| --id        | No        | This is an optional argument and you may use it if you are using security group ID to identify the source and destination security groups. |
+| source      | Yes       | The ID or name of the source SG                                                                                                            |
+| destination | Yes       | The ID or name of the destination SG                                                                                                       |
+
+#### Example usage
+
+```./sgcopy --id sg-294840 sg-284193```
+**OR**
+```./sgcopy sgdemo sgdemo-sg```
+
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
