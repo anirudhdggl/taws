@@ -5,6 +5,7 @@ TAWS or **T**ools for **AWS** is a collection of various codes and tools, that I
 ## Tools and codes we have
 
 - [Force download files from s3 bucket using lambda function](#forceD)
+- [Copy security group rules](#sgcopy)
 
 ## forceD
 
@@ -46,5 +47,9 @@ Whenever any file is uploaded to any folder in the bucket, the lambda function i
 - [ ] The script is unable to do the copy task for files that are not uploaded to any folder and rather directly to s3 base directory.
 
 <p>&nbsp;</p>
+
+## sgcopy
+
+AWS provides users with customizable firewalls for instances. These firewalls are called SG or security groups. Although you can attach many SG to an instance, but doing so makes your 
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
