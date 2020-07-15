@@ -50,7 +50,7 @@ Whenever any file is uploaded to any folder in the bucket, the lambda function i
 
 ## sgcopy
 
-![alt text](https://github.com/anirudhdggl/taws/tree/master/docs/images/sgcopy_screenshot.png)
+![alt text](https://github.com/anirudhdggl/taws/blob/master/docs/images/sgcopy_screenshot.png)
 
 AWS provides users with customizable firewalls for instances. These firewalls are called SG or security groups. Although you can attach many SG to an instance, but doing so makes your configurations very cumbersome and confusing.
 
