@@ -13,7 +13,7 @@ forceD or forceDownload is the script that I had to figure out the hard way. Whe
 
 Most of the solutions for applying forced download of files from s3 out there, involves creating a pre-signed URL and setting **content-disposition** header to *attachment*.
 
-But in my case I needed to set the header irrespective of the mode of download.
+But in my case I needed to set the header irrespective of the mode of upload.
 
 ### How to use
 
