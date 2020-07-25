@@ -6,7 +6,7 @@ TAWS or **T**ools for **AWS** is a collection of various codes and tools, that I
 
 - [Force download files from s3 bucket using lambda function](#forceD)
 - [Copy security group rules](#sgcopy)
-- [Wordpress Sync] (#wordpress-sync)
+- [Wordpress Sync](#wordpress-sync)
 
 ## forceD
 
