@@ -90,5 +90,9 @@ After that, run
 **OR**
 ```./sgcopy sgdemo sgdemo-sg```
 
+## Wordpress sync
+
+This script in itself has a directory. So for sake of convinience it's readme has been placed in it's own directory.
+
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
