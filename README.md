@@ -6,6 +6,7 @@ TAWS or **T**ools for **AWS** is a collection of various codes and tools, that I
 
 - [Force download files from s3 bucket using lambda function](#forceD)
 - [Copy security group rules](#sgcopy)
+- [Wordpress Sync] (#wordpress-sync)
 
 ## forceD
 
@@ -90,7 +91,7 @@ After that, run
 **OR**
 ```./sgcopy sgdemo sgdemo-sg```
 
-## Wordpress sync
+## wordpress-sync
 
 This script in itself has a directory. So for sake of convinience it's readme has been placed in it's own directory.
 
