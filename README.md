@@ -7,6 +7,7 @@ TAWS or **T**ools for **AWS** is a collection of various codes and tools, that I
 - [Force download files from s3 bucket using lambda function](#forceD)
 - [Copy security group rules](#sgcopy)
 - [Wordpress Sync](#wordpress-sync)
+- [SMS Alerts](#smsAlert)
 
 ## forceD
 
@@ -95,5 +96,10 @@ After that, run
 
 This script in itself has a directory. So for sake of convinience it's readme has been placed in it's own directory.
 
+## smsAlert
+
+SMS alert is a script that can be used as a lmabda function to provide you with a mechanism to use it to send SMS across in case of needs.
+
+The use case that I found for this script was to integrate it with NR with the help of API gateway and then send SMS alerts whenever a website being monitored was down. Although you can use it with AWS CloudWatch synthetic Canaries as well.
 
 >For any improvements and suggestions feel free to open an issue, pull request or contact me.
